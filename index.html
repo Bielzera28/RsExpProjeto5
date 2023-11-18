@@ -22,9 +22,9 @@
   <form>
 
     <fieldset>
-      <legend>
+      <h2 id="title">
         INFORMAÇÕES PESSOAIS
-      </legend>
+      </h2>
       <div class="input-box">
         <div class="input-group">
           <div class="input-wrapper">
@@ -36,9 +36,53 @@
             <input type="text" id="subname" />
           </div>
         </div>
+
+        <div class="input-wrapper">
+          <label for="email">Email <span>(digite um email válido)</span></label>
+          <input type="email" id="email" />
+        </div>
+        <legend>
+          INFORMAÇÕES DO MENTOR
+        </legend>
+        <div class="input-wrapper">
+          <label for="mentor">Selecione quem foi o seu mentor</label>
+          <select id="mentor">
+            <option></option>
+            <option>Gabriel</option>
+            <option>Ariane</option>
+            <option>Asafe</option>
+          </select> 
+        </div>
+        <div class="input-wrapper">
+          <label for="feedback">Feedback sobre o mentor</label>
+          <textarea></textarea>
+        </div>
+        <div class="input-checkbox">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+        </div>
+        <legend>
+          AGENDANDO PRÓXIMA MENTORIA
+        </legend>
+        <div class="input-date">
+          <div class="input-wrapper">
+            <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="date"/>
+          </div>
+          <div class="input-time">
+            <div class="input-wrapper">
+              <label for="begin">Das</label>
+              <input type="time" id="begin"/>
+            </div>
+            <div class="input-wrapper">
+              <label for="final">Até</label>
+              <input type="time" id="final"/>
+            </div>
+          </div>
+        </div>
+        <button>Salvar</button>
       </div>
     </fieldset>
-
   </form>
 </body>
 
