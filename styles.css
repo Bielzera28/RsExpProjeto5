@@ -1,0 +1,98 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #BFD7E4;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  color: #FFF;
+
+}
+
+header {
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 465px;
+  position: absolute;
+  z-index: -1;
+  background-color: #293241;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+h1,
+legend {
+  font-family: 'Staatliches', sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-top: 93px;
+  line-height: 45px;
+}
+
+p {
+  line-height: 24px;
+  margin: 0 0 30px;
+}
+
+form {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  color: #FFFFFF;
+  padding: 0;
+
+}
+
+fieldset legend {
+  padding: 50px 275px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #F67669;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.input-box {
+ background-color: #FFF;
+ padding: 30px 55px;
+}
+
+.input-group .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #4E4958;
+}
+
+.input-group {
+  display: flex;
+  gap: 22px;
+}
+
+.input-group .input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-group .input-wrapper input {
+  border-radius: 8px;
+  width: 300px;
+  height: 56px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+}
